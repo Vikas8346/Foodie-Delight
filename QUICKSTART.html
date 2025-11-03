@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight - Quick Start Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .emoji {
+            font-size: 3rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        
+        .link-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .link-btn i {
+            margin-right: 8px;
+        }
+        
+        .admin-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .info-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .info-box strong {
+            color: #856404;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        code {
+            background: #e9ecef;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🍽️</div>
+        <h1>Foodie Delight</h1>
+        <p class="subtitle">Welcome to Your Restaurant Website!</p>
+        
+        <div class="section">
+            <h2>🚀 Quick Start</h2>
+            <p>Your website is ready to use! Click on any of the links below to explore:</p>
+            <div class="links">
+                <a href="index.html" class="link-btn">
+                    🏠 Homepage
+                </a>
+                <a href="menu.html" class="link-btn">
+                    📋 Menu Page
+                </a>
+                <a href="admin.html" class="link-btn admin-btn">
+                    🔐 Admin Panel
+                </a>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>👨‍💼 Admin Access</h2>
+            <div class="info-box">
+                <strong>Default Login Credentials:</strong><br>
+                Username: <code>admin</code><br>
+                Password: <code>admin123</code>
+            </div>
+            <p>Use the admin panel to:</p>
+            <ul class="feature-list">
+                <li>Add new menu items</li>
+                <li>Edit existing dishes</li>
+                <li>Delete items from the menu</li>
+                <li>View statistics by category</li>
+                <li>Manage the entire menu database</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>✨ Key Features</h2>
+            <ul class="feature-list">
+                <li>Fully responsive design (mobile, tablet, desktop)</li>
+                <li>Dynamic menu with search and filter</li>
+                <li>Light/Dark theme toggle</li>
+                <li>Smooth animations and transitions</li>
+                <li>Contact form with validation</li>
+                <li>Admin dashboard with CRUD operations</li>
+                <li>Data persistence using localStorage</li>
+                <li>Modern UI with professional design</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📱 How to Use</h2>
+            <p><strong>For Visitors:</strong></p>
+            <ol style="padding-left: 20px;">
+                <li>Browse the homepage to see offers and features</li>
+                <li>Navigate to the Menu page to view all dishes</li>
+                <li>Use the search bar to find specific items</li>
+                <li>Filter by category (Starters, Main Courses, etc.)</li>
+                <li>Toggle between light and dark themes</li>
+                <li>Fill out the contact form to get in touch</li>
+            </ol>
+            
+            <p style="margin-top: 15px;"><strong>For Administrators:</strong></p>
+            <ol style="padding-left: 20px;">
+                <li>Go to the Admin page and login</li>
+                <li>View dashboard statistics</li>
+                <li>Click "Add New Item" to add dishes</li>
+                <li>Edit or delete existing items from the table</li>
+                <li>Filter the admin view by category</li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>🛠️ Technology Stack</h2>
+            <ul class="feature-list">
+                <li><strong>HTML5</strong> - Semantic structure</li>
+                <li><strong>CSS3</strong> - Modern styling with animations</li>
+                <li><strong>JavaScript</strong> - Vanilla JS (no frameworks)</li>
+                <li><strong>localStorage</strong> - Data persistence</li>
+                <li><strong>Google Fonts</strong> - Poppins typography</li>
+                <li><strong>Font Awesome</strong> - Icon library</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📖 Documentation</h2>
+            <p>For detailed documentation, please check:</p>
+            <ul class="feature-list">
+                <li><strong>README.md</strong> - Complete project documentation</li>
+                <li><strong>IMAGE_GUIDE.md</strong> - Image resources and guidelines</li>
+                <li>Code comments throughout all files</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🎨 Customization Tips</h2>
+            <p>Want to customize the website? Here's how:</p>
+            <ul class="feature-list">
+                <li>Colors: Edit CSS variables in <code>styles.css</code></li>
+                <li>Menu Items: Use the admin panel or edit <code>script.js</code></li>
+                <li>Images: Update URLs in admin panel or default data</li>
+                <li>Content: Modify HTML files directly</li>
+                <li>Fonts: Change in CSS file (Google Fonts link)</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Made with ❤️ by Vikas8346</strong></p>
+            <p>Enjoy building your restaurant website!</p>
+        </div>
+    </div>
+</body>
+</html>
